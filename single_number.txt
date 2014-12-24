@@ -1,0 +1,10 @@
+*** Settings ***
+Library    Selenium2Library
+
+*** Test Cases ***
+Search Siam-Chamnankit
+    Open Browser    http://27.254.142.80:8090/fizzBuzzWeb     gc
+	Input Text    number    1
+    Click Button    Ok    
+    Wait Until Page Contains    1
+    Close Browser
