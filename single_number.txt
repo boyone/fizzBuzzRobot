@@ -2,9 +2,16 @@
 Library    Selenium2Library
 
 *** Test Cases ***
-count one with with fizzbuzz rule
+count one with with fizzbuzz rule should see 1
     Open Browser    http://27.254.142.80:8090/fizzBuzzWeb     
 	Input Text    number    1
     Click Button    Ok    
     Wait Until Page Contains    1
+    Close Browser
+
+count five with with fizzbuzz rule should see Buzz
+    Open Browser    http://27.254.142.80:8090/fizzBuzzWeb     
+	Input Text    number    5
+    Click Button    Ok    
+    Wait Until Page Contains    Buzz
     Close Browser
