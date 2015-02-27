@@ -25,3 +25,10 @@ count five with with fizzbuzz rule should see Buzz
     Click Button    Ok    
     Wait Until Page Contains    Buzz
     Close Browser
+
+count six with with fizzbuzz rule should see Fizz
+    Open Browser    ${URL}
+    Input Text    number    6
+    Click Button    Ok    
+    Wait Until Page Contains    Fizz
+    Close Browser
