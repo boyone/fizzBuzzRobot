@@ -32,10 +32,3 @@ count six with with fizzbuzz rule should see Fizz
     Click Button    Ok
     Wait Until Page Contains    Fizz
     Close Browser
-
-count fifteen with with fizzbuzz rule should see FizzBuzz
-    Open Browser    ${URL}
-    Input Text    number    15
-    Click Button    Ok
-    Wait Until Page Contains    FizzBuzz
-    Close Browser
