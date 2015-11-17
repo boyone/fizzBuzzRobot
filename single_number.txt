@@ -37,5 +37,5 @@ count fifteen with with fizzbuzz rule should see FizzBuzz
     Open Browser    ${URL}
     Input Text    number    15
     Click Button    Ok
-    Wait Until Page Contains    FizzBuzxxz
+    Wait Until Page Contains    FizzBuzz
     Close Browser
