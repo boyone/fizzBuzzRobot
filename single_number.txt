@@ -3,38 +3,39 @@ Library    Selenium2Library
 
 *** Variables ***
 ${URL}    http://dminer.in.th:8090/fizzBuzzWeb/
+${Browser}    gc
 
 *** Test Cases ***
 count one with with fizzbuzz rule should see 1
-    Open Browser    ${URL}    gc
+    Open Browser    ${URL}    ${Browser}
 	Input Text    number    1
     Click Button    Ok
     Wait Until Page Contains    1
     Close Browser
 
 count three with with fizzbuzz rule should see Fizz
-    Open Browser    ${URL}   gc
+    Open Browser    ${URL}   ${Browser}
     Input Text    number    3
     Click Button    Ok
     Wait Until Page Contains    Fizz
     Close Browser
 
 count five with with fizzbuzz rule should see Buzz
-    Open Browser    ${URL}   gc
+    Open Browser    ${URL}   ${Browser}
 	Input Text    number    5
     Click Button    Ok
     Wait Until Page Contains    Buzz
     Close Browser
 
 count six with with fizzbuzz rule should see Fizz
-    Open Browser    ${URL}   gc
+    Open Browser    ${URL}   ${Browser}
     Input Text    number    6
     Click Button    Ok
     Wait Until Page Contains    Fizz
     Close Browser
 
 count fifteen with with fizzbuzz rule should see FizzBuzz
-    Open Browser    ${URL}   gc
+    Open Browser    ${URL}   ${Browser}
     Input Text    number    15
     Click Button    Ok
     Wait Until Page Contains    FizzBuzz
