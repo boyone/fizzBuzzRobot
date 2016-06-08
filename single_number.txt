@@ -3,7 +3,7 @@ Library    Selenium2Library
 
 *** Variables ***
 ${URL}    http://dminer.in.th:8090/fizzBuzzWeb/
-${Browser}    gc
+${Browser}    firefox
 
 *** Test Cases ***
 count one with with fizzbuzz rule should see 1
